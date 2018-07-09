@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundColor"
+    tools:context="com.example.mohamedabdelaziz.geo.splashactivity.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/green_btn_background">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/NoCapacity">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/NoCapacity"
+                    android:onClick="launchMedical"
+                    android:text="Medical Rep"
+                    android:textColor="@color/Text_Color_White"
+                    android:textSize="@dimen/LargTextSize" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/green_btn_background">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/NoCapacity">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/NoCapacity"
+                    android:onClick="LaucnPharmacy"
+                    android:text="User"
+                    android:textColor="@color/Text_Color_White"
+                    android:textSize="@dimen/LargTextSize" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/green_btn_background">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/NoCapacity">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/NoCapacity"
+                    android:onClick="LaucnCompany"
+                    android:text="Company"
+                    android:textColor="@color/Text_Color_White"
+                    android:textSize="@dimen/LargTextSize" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/windowBackgroundColor"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Geo Marketing Portal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/Text_Black_White" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

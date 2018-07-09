@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4EEE"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.mohamedabdelaziz.geo.login.Fragment.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#4242c1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:padding="4dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/windowBackgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/NoCapacity">
+
+
+                    <LinearLayout
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/windowBackgroundColor"
+                        android:orientation="vertical"
+                        android:padding="@dimen/TextPadding">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/view_margin"
+                            android:layout_marginRight="@dimen/view_margin">
+
+                            <EditText
+                                android:id="@+id/et_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Usename"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:padding="@dimen/TextPadding"
+                                android:textColor="@color/Text_Black_White"
+                                android:textSize="@dimen/LargTextSize" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_margin="@dimen/view_margin">
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:padding="@dimen/TextPadding"
+                                android:textColor="@color/Text_Black_White"
+                                android:textSize="@dimen/LargTextSize" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/btn_login"
+                android:layout_width="296dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/green_loading_button"
+                android:text="Login"
+                android:textColor="@color/Text_Color_White"
+                android:textSize="@dimen/NormalTextSize"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+        </FrameLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@color/NoCapacity">
+
+            <Button
+                android:id="@+id/btn_create_account"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@color/NoCapacity"
+                android:text="create account"
+                android:textColor="#00f" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

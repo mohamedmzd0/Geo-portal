@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mohamedabdelaziz.geo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+        <activity
+            android:name=".splashactivity.SplashActivity"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|layoutDirection|colorMode|navigation|locale"
+            android:label="@string/app_name"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|layoutDirection|colorMode|navigation|locale"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Login" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".medicalrep.MedicalRepMain"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|layoutDirection|colorMode|navigation|locale"
+            android:label="@string/title_activity_user_main"
+            android:theme="@style/MedicalTheme" />
+        <activity
+            android:name=".map.MapActivity"
+            android:label="@string/title_activity_map"
+            android:theme="@style/MapTheme" />
+        <activity
+            android:name=".ecommerce.MainEcommerce"
+            android:theme="@style/EcommerTheme" />
+        <activity
+            android:name=".ecommerce.ProductDetail"
+            android:label="@string/title_activity_product_detail"
+            android:theme="@style/EcommerTheme" />
+        <activity
+            android:name=".companymain.CompanyMainActivity"
+            android:label="@string/title_activity_company_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".medicalrep.taskdetaila.TasksActivity"/>
+        <activity android:name=".medicalrep.taskdetaila.OrdersActivity" />
+        <activity
+            android:name=".ecommerce.MyProductsActivity"
+            android:label="my orders"
+            android:parentActivityName=".ecommerce.MainEcommerce" />
+        <activity
+            android:name=".companymain.OrderDetailsActivity"
+            android:parentActivityName=".companymain.CompanyMainActivity" />
+        <activity android:name=".companymain.ProductDetailsActivity" />
+        <activity
+            android:name=".companymain.AddMedicalRepDialog"
+            android:theme="@style/Base.Theme.MaterialComponents.Light.Dialog" />
+    </application>
+
+</manifest>
